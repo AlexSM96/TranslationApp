@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GoogleTranslateAPI", "GoogleTranslateAPI", "{A73E0877-9BEC-47BC-BE99-6B24E34734A8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoogleTranslate", "GoogleTranslate\GoogleTranslate.csproj", "{3F7573BD-1A90-4589-9820-4FB216826A4C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AccessServices", "AccessServices", "{84126DC9-D791-4C9D-B7E0-75116022D014}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrpcTranslation", "GrpcTranslation\GrpcTranslation.csproj", "{5022E298-7EF3-4A12-AD66-4DB014F6DE63}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PresentationApp", "PresentationApp", "{3771C097-F0DC-4233-9F91-C8CD11942DB2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TranslationConsoleApp", "TranslationConsoleApp\TranslationConsoleApp.csproj", "{79583C3F-CA63-4552-B8E9-6E7B9232D9BC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3F7573BD-1A90-4589-9820-4FB216826A4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F7573BD-1A90-4589-9820-4FB216826A4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F7573BD-1A90-4589-9820-4FB216826A4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F7573BD-1A90-4589-9820-4FB216826A4C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5022E298-7EF3-4A12-AD66-4DB014F6DE63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5022E298-7EF3-4A12-AD66-4DB014F6DE63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5022E298-7EF3-4A12-AD66-4DB014F6DE63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5022E298-7EF3-4A12-AD66-4DB014F6DE63}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79583C3F-CA63-4552-B8E9-6E7B9232D9BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79583C3F-CA63-4552-B8E9-6E7B9232D9BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79583C3F-CA63-4552-B8E9-6E7B9232D9BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79583C3F-CA63-4552-B8E9-6E7B9232D9BC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3F7573BD-1A90-4589-9820-4FB216826A4C} = {A73E0877-9BEC-47BC-BE99-6B24E34734A8}
+		{5022E298-7EF3-4A12-AD66-4DB014F6DE63} = {84126DC9-D791-4C9D-B7E0-75116022D014}
+		{79583C3F-CA63-4552-B8E9-6E7B9232D9BC} = {3771C097-F0DC-4233-9F91-C8CD11942DB2}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {122E6E5F-92F1-43C6-A9A7-0A24FB95A6C3}
+	EndGlobalSection
+EndGlobal
