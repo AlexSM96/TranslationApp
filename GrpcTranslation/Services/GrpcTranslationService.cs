@@ -1,5 +1,6 @@
 using GoogleTranslate.Interfaces;
 using Grpc.Core;
+using ProtoObjects;
 
 namespace GrpcTranslation.Services
 {

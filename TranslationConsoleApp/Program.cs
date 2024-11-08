@@ -1,23 +1,23 @@
 ﻿var services = new ServiceConfiguration();
+var translationServices = services?.ServiceProvider.GetServices<ITranslation>().ToList();
+// Прямой доступ через GoogleTranslateService
+var translationService = translationServices?.Find(x => x is GrpcTranslationClient) 
+    ?? throw new ArgumentNullException("Сервис не найден");
 
 while (true)
 {
-    var serviceInfo = await services.Client.GetServiceInfoAsync(new SInfoRequest { ForeignServiceInfo = "GrpcService" });
-    Console.WriteLine(serviceInfo.ServiceInfo);
-
+    var serviceInfo = await translationService.GetServicesInfoAsync();
+    Console.WriteLine(serviceInfo);
+    Console.WriteLine();
     Console.WriteLine("Ведите язык 1:");
     string? sourceLang = Console.ReadLine() ?? "en";
     Console.WriteLine("Ведите язык 2:");
-    string? tragetLang = Console.ReadLine() ?? "ru";
+    string? targetLang = Console.ReadLine() ?? "ru";
     Console.WriteLine("Ведите текст: ");
     string? text = Console.ReadLine();
     if (string.IsNullOrWhiteSpace(text)) continue;
-
-    var translateReauest = new TR();
-    translateReauest.Texts.AddRange([text]);
-    var translateResult = await services.Client.TranslateAsync(translateReauest);
-
+    var translateResult = await translationService.TranslateAsync(sourceLang, targetLang, [text]);
     Console.WriteLine("Перевод^: ");
-    Console.WriteLine(string.Join("\n", translateResult.TranslatedTexts));
+    Console.WriteLine(string.Join("\n", translateResult));
     Console.WriteLine(new string('-', Console.BufferWidth));
 }

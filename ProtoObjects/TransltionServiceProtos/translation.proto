@@ -1,14 +1,13 @@
 syntax = "proto3";
 
-option csharp_namespace = "TranslationConsoleApp";
+option csharp_namespace = "ProtoObjects";
 
-package translate;
+package translation;
 
 service Translation {
   rpc Translate (TranslateRequest) returns (TranslateReply);
   rpc GetServiceInfo (ServiceInfoRequest) returns (ServiceInfoReply);
 }
-
 
 message TranslateRequest {
   string sourceLang = 1;

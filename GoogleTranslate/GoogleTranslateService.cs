@@ -10,7 +10,7 @@ namespace GoogleTranslate
             SizeLimit = 1024
         });
 
-        public Task<string> GetServicesInfoAsync(string foreignServiceInfo)
+        public async Task<string> GetServicesInfoAsync(string foreignServiceInfo = "")
         {
             string info = $"""
              Текущий сервис: {nameof(GoogleTranslateService)}
@@ -19,7 +19,7 @@ namespace GoogleTranslate
              Объём кэша: {_cache.Count}
              """;
 
-            return Task.FromResult(info);
+            return await Task.FromResult(info);
         }
 
         public async Task<IEnumerable<string>> TranslateAsync(string sourceLang, string targetLang, IEnumerable<string> texts)

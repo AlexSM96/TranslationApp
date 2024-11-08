@@ -5,15 +5,19 @@ VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GoogleTranslateAPI", "GoogleTranslateAPI", "{A73E0877-9BEC-47BC-BE99-6B24E34734A8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoogleTranslate", "GoogleTranslate\GoogleTranslate.csproj", "{3F7573BD-1A90-4589-9820-4FB216826A4C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GoogleTranslate", "GoogleTranslate\GoogleTranslate.csproj", "{3F7573BD-1A90-4589-9820-4FB216826A4C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AccessServices", "AccessServices", "{84126DC9-D791-4C9D-B7E0-75116022D014}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrpcTranslation", "GrpcTranslation\GrpcTranslation.csproj", "{5022E298-7EF3-4A12-AD66-4DB014F6DE63}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GrpcTranslation", "GrpcTranslation\GrpcTranslation.csproj", "{5022E298-7EF3-4A12-AD66-4DB014F6DE63}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PresentationApp", "PresentationApp", "{3771C097-F0DC-4233-9F91-C8CD11942DB2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TranslationConsoleApp", "TranslationConsoleApp\TranslationConsoleApp.csproj", "{79583C3F-CA63-4552-B8E9-6E7B9232D9BC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TranslationConsoleApp", "TranslationConsoleApp\TranslationConsoleApp.csproj", "{79583C3F-CA63-4552-B8E9-6E7B9232D9BC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Protos", "Protos", "{0789CB81-6AD2-4DE7-8C0B-A9E690AC8C57}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProtoObjects", "ProtoObjects\ProtoObjects.csproj", "{9955DD4B-7C34-4DAB-BAB2-C77452A1DABD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +37,10 @@ Global
 		{79583C3F-CA63-4552-B8E9-6E7B9232D9BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{79583C3F-CA63-4552-B8E9-6E7B9232D9BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{79583C3F-CA63-4552-B8E9-6E7B9232D9BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9955DD4B-7C34-4DAB-BAB2-C77452A1DABD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9955DD4B-7C34-4DAB-BAB2-C77452A1DABD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9955DD4B-7C34-4DAB-BAB2-C77452A1DABD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9955DD4B-7C34-4DAB-BAB2-C77452A1DABD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -41,6 +49,7 @@ Global
 		{3F7573BD-1A90-4589-9820-4FB216826A4C} = {A73E0877-9BEC-47BC-BE99-6B24E34734A8}
 		{5022E298-7EF3-4A12-AD66-4DB014F6DE63} = {84126DC9-D791-4C9D-B7E0-75116022D014}
 		{79583C3F-CA63-4552-B8E9-6E7B9232D9BC} = {3771C097-F0DC-4233-9F91-C8CD11942DB2}
+		{9955DD4B-7C34-4DAB-BAB2-C77452A1DABD} = {0789CB81-6AD2-4DE7-8C0B-A9E690AC8C57}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {122E6E5F-92F1-43C6-A9A7-0A24FB95A6C3}
